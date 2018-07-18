@@ -1,0 +1,22 @@
+.section-about {
+    background-color: $color-white-medium-dark;
+    margin-top: -12vh;
+    padding-top: 20rem;
+
+    .about {
+        .container {
+            display: flex;
+        }
+
+        &__img {
+            height: 30rem;
+            width: 30rem;
+            border-radius: 50%;
+        }
+
+        &__desc {
+            align-items: center;
+            margin: 5rem 10rem;
+        }
+    }
+}
