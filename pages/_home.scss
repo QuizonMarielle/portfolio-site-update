@@ -1,11 +1,20 @@
 .section-about {
     background-color: $color-white-medium-dark;
     margin-top: -12vh;
-    padding-top: 20rem;
+    padding: 15rem 18rem 10rem 18rem;
+    transform: skewY(-7deg);
+
+
+    & > * {
+        transform: skewY(7deg);
+    }
 
     .about {
+        display: flex;
+        text-align: center;
+
         .container {
-            display: flex;
+            
         }
 
         &__img {
@@ -15,8 +24,10 @@
         }
 
         &__desc {
-            align-items: center;
-            margin: 5rem 10rem;
+            align-self: center;
+            margin-top: -4rem;
+            margin-left: 10rem;
+            width: 100%;
         }
     }
 }

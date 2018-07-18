@@ -291,13 +291,19 @@ body {
 .section-about {
   background-color: #f9f9f9;
   margin-top: -12vh;
-  padding-top: 20rem; }
-  .section-about .about .container {
-    display: flex; }
-  .section-about .about__img {
-    height: 30rem;
-    width: 30rem;
-    border-radius: 50%; }
-  .section-about .about__desc {
-    align-items: center;
-    margin: 5rem 10rem; }
+  padding: 15rem 18rem 10rem 18rem;
+  transform: skewY(-7deg); }
+  .section-about > * {
+    transform: skewY(7deg); }
+  .section-about .about {
+    display: flex;
+    text-align: center; }
+    .section-about .about__img {
+      height: 30rem;
+      width: 30rem;
+      border-radius: 50%; }
+    .section-about .about__desc {
+      align-self: center;
+      margin-top: -4rem;
+      margin-left: 10rem;
+      width: 100%; }
