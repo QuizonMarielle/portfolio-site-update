@@ -62,9 +62,13 @@ body {
 
 .heading-secondary {
   display: inline-block;
-  margin: 0 auto;
   letter-spacing: .2rem;
   font-size: 3.5rem; }
+
+.heading-tertiary {
+  display: inline-block;
+  letter-spacing: .2rem;
+  font-size: 5rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -83,6 +87,51 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.about {
+  display: flex;
+  text-align: center; }
+  .about__shape {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%; }
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      .about__shape {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none; } }
+  .about__img {
+    height: 100%;
+    transform: scale(1.4);
+    backface-visibility: hidden;
+    transition: all .5s; }
+  .about__desc {
+    align-self: center;
+    margin-top: -4rem;
+    margin-left: 15rem;
+    width: 100%; }
+  .about__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .about:hover .about__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .about:hover .about__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%); }
 
 .bg-video {
   position: absolute;
@@ -289,21 +338,10 @@ body {
   transform: rotate(-135deg); }
 
 .section-about {
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
   margin-top: -12vh;
-  padding: 15rem 18rem 10rem 18rem;
-  transform: skewY(-7deg); }
+  height: 65vh;
+  padding: 20rem 5rem;
+  transform: skewY(-6deg); }
   .section-about > * {
-    transform: skewY(7deg); }
-  .section-about .about {
-    display: flex;
-    text-align: center; }
-    .section-about .about__img {
-      height: 30rem;
-      width: 30rem;
-      border-radius: 50%; }
-    .section-about .about__desc {
-      align-self: center;
-      margin-top: -4rem;
-      margin-left: 10rem;
-      width: 100%; }
+    transform: skewY(6deg); }
