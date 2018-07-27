@@ -56,13 +56,21 @@ body {
 }
 
 .heading-secondary {
-    display: inline-block;
+    color: $color-white;
+    text-align: center;
     letter-spacing: .2rem;
     font-size: 3.5rem;
 }
 
 .heading-tertiary {
-    display: inline-block;
     letter-spacing: .2rem;
     font-size: 5rem;
+}
+
+
+.whatido__desc {
+    font-size: 1.5rem;
+    width: 100%;
+    color: $color-white;
+    margin: 0 auto;
 }

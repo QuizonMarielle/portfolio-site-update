@@ -61,14 +61,20 @@ body {
     margin-top: .3rem; }
 
 .heading-secondary {
-  display: inline-block;
+  color: #fff;
+  text-align: center;
   letter-spacing: .2rem;
   font-size: 3.5rem; }
 
 .heading-tertiary {
-  display: inline-block;
   letter-spacing: .2rem;
   font-size: 5rem; }
+
+.whatido__desc {
+  font-size: 1.5rem;
+  width: 100%;
+  color: #fff;
+  margin: 0 auto; }
 
 .u-center-text {
   text-align: center !important; }
@@ -82,21 +88,29 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
 
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-padding-top-medium {
+  padding-top: 8rem !important; }
+
 .about {
   display: flex;
-  text-align: center; }
+  flex-direction: row;
+  text-align: center;
+  width: 100%; }
   .about__shape {
-    width: 15rem;
-    height: 15rem;
+    width: 50rem;
+    height: 30rem;
+    transform: translateX(3rem);
     position: relative;
-    overflow: hidden;
-    border-radius: 50%; }
+    backface-visibility: hidden; }
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
       .about__shape {
         -webkit-clip-path: circle(50% at 50% 50%);
@@ -106,14 +120,10 @@ body {
         border-radius: none; } }
   .about__img {
     height: 100%;
-    transform: scale(1.4);
+    width: 100%;
+    transform: translateY(5rem) scale(1.4);
     backface-visibility: hidden;
     transition: all .5s; }
-  .about__desc {
-    align-self: center;
-    margin-top: -4rem;
-    margin-left: 15rem;
-    width: 100%; }
   .about__caption {
     position: absolute;
     top: 50%;
@@ -128,10 +138,17 @@ body {
     backface-visibility: hidden; }
   .about:hover .about__caption {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden; }
   .about:hover .about__img {
-    transform: translateX(-4rem) scale(1);
-    filter: blur(3px) brightness(80%); }
+    transform: translateX(0) scale(1);
+    filter: blur(3px) brightness(80%);
+    backface-visibility: hidden; }
+  .about__desc {
+    align-self: center;
+    margin-top: -4rem;
+    margin-left: 15rem;
+    width: 100%; }
 
 .bg-video {
   position: absolute;
@@ -210,7 +227,7 @@ body {
 .header {
   height: 100vh;
   position: relative;
-  background-image: linear-gradient(to right bottom, rgba(47, 134, 255, 0.8), rgba(3, 25, 162, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(47, 134, 255, 0.9), rgba(3, 25, 162, 0.9));
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
   .header__logo-box {
@@ -344,4 +361,27 @@ body {
   padding: 20rem 5rem;
   transform: skewY(-6deg); }
   .section-about > * {
+    transform: skewY(5deg); }
+
+.section-whatido {
+  height: 55vh;
+  background-image: linear-gradient(to right bottom, rgba(47, 134, 255, 0.8), rgba(3, 25, 162, 0.8)), url(../img/laptop.jpg);
+  background-size: cover;
+  transform: skewY(-6deg);
+  margin-top: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .section-whatido > * {
+    transform: skewY(6deg); }
+  .section-whatido .whatido {
+    width: 80%;
+    margin: 0 auto; }
+
+.section-portfolio {
+  transform: skewY(-6deg);
+  height: 55vh;
+  margin-top: -1rem;
+  background-color: #f6f6f6; }
+  .section-portfolio > * {
     transform: skewY(6deg); }

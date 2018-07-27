@@ -7,6 +7,42 @@
 
 
     & > * {
+        transform: skewY(5deg);
+    }
+}
+
+.section-whatido {
+    height: 55vh;
+    // padding: 15rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-blue-light, 0.8),
+        rgba($color-blue-dark, 0.8)),
+    url(../img/laptop.jpg);
+    background-size: cover;
+    transform: skewY(-6deg);
+    margin-top: -1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+        transform: skewY(6deg);
+    }
+
+    .whatido {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.section-portfolio {
+    transform: skewY(-6deg);
+    height: 55vh;
+    margin-top: -1rem;
+    background-color: $color-white-medium-dark;
+
+    & > * {
         transform: skewY(6deg);
     }
 }
