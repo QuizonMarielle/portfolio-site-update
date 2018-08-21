@@ -23,6 +23,7 @@ body {
         white-space: nowrap;
         overflow: hidden;
         transform: translateY(-50%, -50%);
+        text-shadow: 0 1px 1px #f8f9fa;
 
         @media only screen and (max-width: $bp-small) {
             font-size: 180%;
@@ -41,6 +42,8 @@ body {
         font-weight: 700;
         letter-spacing: 1.5rem;
         margin-top: 2rem;
+        text-shadow: 0 1px 0 #f8f9fa;
+
 
     }
 
@@ -70,6 +73,7 @@ body {
 .heading-tertiary {
     letter-spacing: .2rem;
     font-size: 5rem;
+    text-shadow: 0 1px 2px #aeadad;
 
     @media only screen and (max-width: $bp-large) {
         order: 1;
@@ -83,6 +87,7 @@ body {
 .heading-portfolio {
     letter-spacing: .2rem;
     font-size: 5rem;
+    text-shadow: 0 1px 2px #aeadad;
 
     @media only screen and (max-width: $bp-large) {
         padding-top: 8rem;
