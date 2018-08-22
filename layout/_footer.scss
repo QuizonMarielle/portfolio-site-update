@@ -7,21 +7,23 @@
 
     &-content {
         margin: auto;
-        padding: 12rem;
+        padding: 12rem 8rem;
         width: 50%;
         text-align: center;
         display: block;
         color: $color-white;
 
-        @media only screen and (max-width: $bp-large) {
-            width: 80%;
+        @media only screen and (max-width: $bp-largest) {
+            padding: 12rem 5rem;
+            width: 70%;
         }
 
         @media only screen and (max-width: $bp-medium) {
-            width: 100%;
+            width: 80%;
         }
 
         @media only screen and (max-width: $bp-small) {
+            width: 100%;
             padding: 8rem;
         }
     }

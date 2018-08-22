@@ -1,7 +1,7 @@
 .section-about {
     background-color: $color-white-medium-dark;
     margin-top: -12vh;
-    height: 65vh;
+    height: auto;
     padding: 2rem 5rem;
     transform: skewY(-6deg);
 
@@ -25,10 +25,15 @@
     width: 100%;
     padding: 20rem 0;
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-medium) {
         flex-direction: column;
         transform: skewY(0deg);
         padding: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        transform: skewY(0deg);
+        padding: 5rem 0;
     }
     
 
@@ -125,12 +130,25 @@
 
         @media only screen and (max-width: $bp-large) {
             order: 3;
-            margin: 3rem 0 5rem 5rem;
+            margin: 3rem 0 5rem 0;
+            padding-left: 8rem;
+            max-width: 55em;
             transform: skewY(0);
         }
 
         @media only screen and (max-width: $bp-medium) {
             margin: 0;
+            margin-bottom: 5rem;
+            padding: 0;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 0 5rem;
+            margin-bottom: 0;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 0 2.5rem;
         }
     }
 

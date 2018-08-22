@@ -15,7 +15,7 @@ body {
         position: relative;
         display: block;
         top: 50%;
-        width: 100%;
+        width: 70%;
         margin: 0 auto;
         border-right: 2px solid rgba(#fff, 0.75);
         font-size: 200%;
@@ -32,7 +32,7 @@ body {
     }
 
     &--type__anim-1 {
-        animation: typing 4s steps(45, end),
+        animation: typing 3.5s steps(50, end),
         blink-caret 1s step-end infinite;
     }
 
