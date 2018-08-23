@@ -2,7 +2,11 @@
   from {
     width: 0; }
   to {
-    width: 70%; } }
+    width: 70%;
+    @media only screen and (max-width: 62.5em) {
+      width: 80%; }
+    @media only screen and (max-width: 50em) {
+      width: 100%; } } }
 
 @keyframes blink-caret {
   from, to {
@@ -52,11 +56,17 @@ body {
     overflow: hidden;
     transform: translateY(-50%, -50%);
     text-shadow: 0 1px 1px #f8f9fa; }
+    @media only screen and (max-width: 62.5em) {
+      .heading-primary--main {
+        width: 80%; } }
+    @media only screen and (max-width: 50em) {
+      .heading-primary--main {
+        width: 100%; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         font-size: 180%; } }
   .heading-primary--type__anim-1 {
-    animation: typing 3.5s steps(50, end), blink-caret 1s step-end infinite; }
+    animation: typing 3s steps(40, end), blink-caret 1s step-end infinite; }
   .heading-primary--sub {
     display: block;
     font-size: 1.5rem;

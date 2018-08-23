@@ -25,6 +25,14 @@ body {
         transform: translateY(-50%, -50%);
         text-shadow: 0 1px 1px #f8f9fa;
 
+        @media only screen and (max-width: $bp-large) {
+            width: 80%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+        }
+
         @media only screen and (max-width: $bp-small) {
             font-size: 180%;
         }
@@ -32,8 +40,13 @@ body {
     }
 
     &--type__anim-1 {
-        animation: typing 3.5s steps(50, end),
+        animation: typing 3s steps(40, end),
         blink-caret 1s step-end infinite;
+
+        // @media only screen and (max-width: $bp-large) {
+        //     animation: typing 3.5s steps(40, end),
+        //     blink-caret 1s step-end infinite;
+        // }
     }
 
     &--sub {
