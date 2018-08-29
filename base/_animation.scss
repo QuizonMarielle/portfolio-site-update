@@ -22,4 +22,9 @@
         border-color: $color-white;
     }
 }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
 

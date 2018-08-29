@@ -14,6 +14,14 @@
   50% {
     border-color: #fff; } }
 
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -30,8 +38,12 @@ html {
     html {
       font-size: 40%; } }
 
+html.sr .load-hidden {
+  visibility: hidden; }
+
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 100%; }
 
 body {
   font-family: "Raleway", sans-serif;
@@ -661,3 +673,26 @@ body {
     filter: alpha(opacity=100);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
+
+body {
+  background-color: #000; }
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+
+.page-content {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s; }
