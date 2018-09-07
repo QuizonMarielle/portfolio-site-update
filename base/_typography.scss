@@ -42,11 +42,6 @@ body {
     &--type__anim-1 {
         animation: typing 3s steps(40, end),
         blink-caret 1s step-end infinite;
-
-        // @media only screen and (max-width: $bp-large) {
-        //     animation: typing 3.5s steps(40, end),
-        //     blink-caret 1s step-end infinite;
-        // }
     }
 
     &--sub {
@@ -56,8 +51,6 @@ body {
         letter-spacing: 1.5rem;
         margin-top: 2rem;
         text-shadow: 0 1px 0 #f8f9fa;
-
-
     }
 
     &--sub-2 {
@@ -65,15 +58,8 @@ body {
         font-size: 1.5rem;
         font-weight: 700;
         letter-spacing: 1.5rem;
-        margin-top: .3rem;
+        margin-top: 1.8rem;
     }
-
-
-    // &--type__anim-2 {
-    //     animation: type 4s steps(35) 4s 1 normal both,
-    //     blinkTextCursor 500ms steps(40) infinite normal;
-    // }
-
 }
 
 .heading-secondary {
@@ -94,6 +80,11 @@ body {
 
     @media only screen and (max-width: $bp-medium) {
         margin-top: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 4rem;
+        margin: 4rem 0;
     }
 }
 
@@ -123,8 +114,10 @@ body {
     }
 }
 
+// What I Do
+
 .whatido__desc {
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 100%;
     color: $color-white;
     margin: 0 auto;
@@ -136,4 +129,9 @@ body {
     @media only screen and (max-width: $bp-smallest) {
         font-size: 2rem;
     }
+}
+
+// FOOTER SECTION
+.footer-header {
+    font-size: 4rem;
 }

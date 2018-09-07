@@ -11,8 +11,13 @@
 
     &__logo-box {
         position: absolute;
-        top: 4rem;
-        left: 4rem;
+        top: 7rem;
+        left: 7rem;
+
+        @media only screen and (max-width: $bp-small) {
+            top: 8.5rem;
+            right: 8.5rem;
+        }
     }
 
     &__logo {
